@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+}
+
+.error-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 20px #ff0000;
+    background: rgba(10, 0, 0, 0.9);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Efek Berkedip Brutal */
+.blink {
+    animation: flash 0.2s infinite;
+}
+
+@keyframes flash {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0; background-color: #ff0000; color: #000; }
+    100% { opacity: 1; transform: scale(1.02); }
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    border: 2px solid #ff0000;
+    margin-top: 20px;
+    background: #000;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #ff0000;
+    transition: width 0.1s ease;
+}
+
+.status {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}

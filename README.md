@@ -1,2 +1,1 @@
-# web-seruu
-seruu
+# web gk asik
